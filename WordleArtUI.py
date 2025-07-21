@@ -32,7 +32,13 @@ for row in range(6):
     cols = st.columns(5)
     pattern = st.session_state.patterns[row]
     matches = find_matching_words(word_list, st.session_state.word_of_day, "".join(pattern)) if len(st.session_state.word_of_day) == 5 else []
-    top_word = matches[0] if matches else ""
+    top_word = ""
+    for m in matches:
+        if m != st.session_state.word_of_day:
+            top_word = m
+            break
+    if not top_word and matches:
+        top_word = matches[0]
 
     for col in range(5):
         tile_key = f"tile_{row}_{col}"
@@ -74,7 +80,13 @@ if len(st.session_state.word_of_day) == 5:
         if pattern == "nnnnn":
             continue
         matches = find_matching_words(word_list, st.session_state.word_of_day, pattern)
-        top_word = matches[0] if matches else "(no match)"
+        top_word = ""
+        for m in matches:
+            if m != st.session_state.word_of_day:
+                top_word = m
+                break
+        if not top_word and matches:
+            top_word = matches[0]
         st.markdown(f"**Row {row + 1}** — Pattern: `{pattern}` → **{top_word}**")
 
     st.markdown("---")

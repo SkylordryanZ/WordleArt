@@ -43,6 +43,8 @@ def find_matching_words(word_list, word_of_day, pattern):
         word = word.lower()
         if len(word) == 5 and word.isalpha():
             if matches_feedback_with_pool(word, word_of_day, pattern):
+                if pattern == 'hhhhh' and word == word_of_day:
+                    continue  # Skip the actual Wordle word only for 'hhhhh'
                 matches.append(word)
     return matches
 
