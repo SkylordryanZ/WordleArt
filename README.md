@@ -82,4 +82,5 @@ streamlit run WordleArtUI.py
 ```
 📃 License
 
-MIT License. Free to use, modify, or remix.
+This project is licensed under the GNU General Public License v3.0 (GPLv3).
+You are free to use, modify, and share this project, but derivative works must also remain open source and reference this project.
