@@ -17,6 +17,16 @@ So I built a UI that automates the process and lets me design weird and funny Wo
 
 This tool saves time, keeps it valid with real words, and still lets me have fun being chaotic.
 
+## 🎮 Try It Online
+
+You can use the Wordle Art Generator directly in your browser — no installation needed:
+
+👉 [Launch WordleArt on Streamlit Cloud](https://wordleart.streamlit.app/)
+
+## 🖥️ Run It Locally
+
+Prefer to run it on your own machine or make custom tweaks? Follow the instructions below to get set up.
+
 ## 🧰 How to Run It
 
 ### 1. Clone the Repository
