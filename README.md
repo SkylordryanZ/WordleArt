@@ -32,7 +32,7 @@ Prefer to run it on your own machine or make custom tweaks? Follow the instructi
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/wordle-art.git
+git clone https://github.com/SkylordryanZ/WordleArt.git
 cd wordle-art
 ```
 2. Install Requirements
